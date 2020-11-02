@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-danger " >
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="{{ route('frontend.landing') }}" rel="tooltip"
+            {{-- <a class="navbar-brand" href="{{ route('frontend.landing') }}" rel="tooltip" --}}
                title="Coded by Creative Tim" data-placement="bottom" >
                 5damt-web.com
             </a>
@@ -19,9 +19,9 @@
                         Categories
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        @foreach($categories as $category)
+                        {{-- @foreach($categories as $category)
                             <a class="dropdown-item" href="{{ route('front.category' , ['id' => $category->id ]) }}">{{ $category->name }}</a>
-                        @endforeach
+                        @endforeach --}}
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -29,9 +29,9 @@
                         Skills
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        @foreach($skills as $skill)
+                        {{-- @foreach($skills as $skill)
                             <a class="dropdown-item" href="{{ route('front.skill' , ['id' => $skill->id ]) }}">{{ $skill->name }}</a>
-                        @endforeach
+                        @endforeach --}}
                     </div>
                 </li>
                 @guest
@@ -44,11 +44,11 @@
                 @else
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ Auth::user()->name }}
+                            {{-- {{ Auth::user()->name }} --}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                        <a class="dropdown-item" href="{{ route('front.profile' , ['id' => auth()->user()->id]) }}" >Profile</a>
+                        {{-- <a class="dropdown-item" href="{{ route('front.profile' , ['id' => auth()->user()->id]) }}" >Profile</a> --}}
 
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();

@@ -10,4 +10,5 @@ class HomeController extends BackEndController
     {
         return view('back-end.home');
     }
-}
+}  
+ 

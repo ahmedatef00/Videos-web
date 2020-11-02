@@ -3,11 +3,11 @@
         <div class="row">
             <nav class="footer-nav">
                 <ul>
-                    @foreach($pages as $page)
+                    {{-- @foreach($pages as $page) --}}
                         <li>
-                            <a href="{{ route('front.page' , ['id' => $page->id , 'slug' => slug($page->name)]) }}" >{{ $page->name }}</a>
+                            {{-- <a href="{{ route('front.page' , ['id' => $page->id , 'slug' => slug($page->name)]) }}" >{{ $page->name }}</a> --}}
                         </li>
-                    @endforeach
+                    {{-- @endforeach --}}
                 </ul>
             </nav>
             <div class="credits ml-auto">

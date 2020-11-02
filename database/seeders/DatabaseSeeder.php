@@ -2,7 +2,13 @@
 
 namespace Database\Seeders;
 
+use Database\Seeders\Categories;
+use Database\Seeders\Comments;
 use Illuminate\Database\Seeder;
+use Database\Seeders\Skills;
+use Database\Seeders\Tags;
+use Database\Seeders\Users;
+use Database\Seeders\Videos;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +19,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // \App\Models\User::factory(1000)->create();
+
+        $this->call([
+            Users::class,
+            Categories::class,
+            Skills::class,
+            Tags::class,
+            Videos::class,
+            Comments::class
+        ]);
     }
 }

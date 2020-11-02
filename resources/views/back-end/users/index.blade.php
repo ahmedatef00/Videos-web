@@ -33,9 +33,9 @@
                     <th>
                         email
                     </th>
-                    <th>
+                    {{-- <th>
                         group
-                    </th>
+                    </th> --}}
                     <th class="text-right">
                         control
                     </th>
@@ -53,12 +53,12 @@
                             {{ $row->email }}
                         </td>
                         <td>
-                            {{ $row->group }}
+                            {{-- {{ $row->group }} --}}
                         </td>
-                        <td class="td-actions text-right">
+                     <td class="td-actions text-right"> 
                             @include('back-end.shared.buttons.edit')
                             @include('back-end.shared.buttons.delete')
-                        </td>
+                        </td> 
                     </tr>
                 @endforeach
                 </tbody>
